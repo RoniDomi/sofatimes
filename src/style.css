@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Beau_Rivage;
+    src: url('src/assets/fonts/Beau_Rivage/BeauRivage-Regular.ttf');
+}
+@font-face {
+    font-family: Bricolage_Grotesque;
+    src: url('src/assets/fonts/Bricolage_Grotesque /BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf');
+}
+
+body {
+    font-family: Bricolage_Grotesque, serif;
+    background-size: cover;
+    background: #211f1f;
+}
+
+.img-index {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100% ;
+    display: block;
+    object-fit: cover;
+}
+
+.title-header .header-title-name {
+    font-family: Beau_Rivage, cursive;
+    color: #FFFFFF;
+    font-size: 128px;
+    text-align: center;
+    margin: -60px;
+}
+
+.title-header ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 70px;
+    align-self: center;
+}
+
+.title-header ul {
+    text-align: center;
+    margin: 130px;
+}
+
+.title-header a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 24px;
+    position: relative;
+    float: right;
+    display: block;
+    margin: -90px 20px;
+}
+
+.title-header button {
+    border: none;
+    background: none;
+}
+
+.title.btn .btn-icon {
+    width: 24px;
+    height: 24px;
+}
