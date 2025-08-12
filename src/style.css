@@ -7,10 +7,29 @@
     src: url('src/assets/fonts/Bricolage_Grotesque /BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf');
 }
 
+@keyframes zoom_hover {
+    0% {
+        font-size: 20px;
+        color: #FEFFEA;
+    }
+    50% {
+        font-size: 22px;
+        color: #DECDF5;
+    }
+    100% {
+        font-size: 24px;
+        color: #DECDF5;
+    }
+}
+
 body {
     font-family: Bricolage_Grotesque, serif;
     background-size: cover;
     background: #211f1f;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 .img-index {
@@ -24,10 +43,27 @@ body {
     object-fit: cover;
 }
 
-.title-header .header-title-name {
+.title-text {
+    display: inline;
+    line-height: 1;
     font-family: Beau_Rivage, cursive;
-    color: #FFFFFF;
+    color: #FEFFEA;
     font-size: 128px;
+    text-align: center;
+}
+
+.header-title-name {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title-name .title-text:hover {
+    color: #DECDF5;
+}
+
+.title-header ul {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -39,22 +75,55 @@ body {
     display: inline-block;
     padding-right: 70px;
     align-self: center;
+    padding-top: 15px;
 }
 
-.title-header ul {
-    text-align: center;
-    margin: 130px;
+.title-header ul li a {
+    color: #FEFFEA;
+    font-size: 20px;
 }
 
-.title-header a {
+.title-header ul li a:hover {
+    animation-name: zoom_hover;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+}
+
+.title-header .log-in-tag {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #FEFFEA;
     font-size: 16px;
-    position: relative;
     float: right;
     display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.title-header .log-in-tag:hover {
+    color: #DECDF5;
 }
 
 .title-header .rs-btn {
-    color: #FFFFFF;
+    color: #FEFFEA;
+}
+
+.title-header .rs-btn:hover {
+    color: #DECDF5;
+}
+
+/* Smaller screens padding and margin adjustment */
+@media (max-width: 768px) {
+    .title-header ul li {
+        padding-right: 40px;
+    }
+
+    .title-header ul li a {
+        font-size: 18px;
+    }
+
+    .title-text {
+        font-size: 110px;
+    }
 }

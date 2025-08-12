@@ -14,8 +14,12 @@ export default function TitleHeader() {
               appearance="link"
               style={ButtonStyle}
           />
-          <h1 className="header-title-name">SofaTimes</h1>
-          <a href="#">Log in</a>
+          <a href="#" className="log-in-tag">
+              Log in
+          </a>
+          <a href="/" className="header-title-name">
+              <h1 className="title-text">SofaTimes</h1>
+          </a>
           <div className="nav-list">
               <ul className="nav">
                   <li className="nav-item"><a href="#">Volumes</a></li>
