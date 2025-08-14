@@ -1,10 +1,14 @@
 @font-face {
     font-family: Beau_Rivage;
-    src: url('src/assets/fonts/Beau_Rivage/BeauRivage-Regular.ttf');
+    src: url('./assets/fonts/Beau_Rivage/BeauRivage-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: Bricolage_Grotesque;
-    src: url('src/assets/fonts/Bricolage_Grotesque /BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf');
+    src: url('./assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @keyframes zoom_hover {
@@ -120,10 +124,19 @@ a {
     }
 
     .title-header ul li a {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .title-text {
-        font-size: 110px;
+        font-size: 150px;
+    }
+
+    .rsuite-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .title-header .log-in-tag {
+        font-size: 24px;
     }
 }

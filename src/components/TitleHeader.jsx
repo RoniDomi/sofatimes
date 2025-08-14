@@ -13,11 +13,12 @@ export default function TitleHeader() {
               icon={<Menu />}
               appearance="link"
               style={ButtonStyle}
+              className="rsuite-btn"
           />
           <a href="#" className="log-in-tag">
               Log in
           </a>
-          <a href="/" className="header-title-name">
+          <a href="#" className="header-title-name">
               <h1 className="title-text">SofaTimes</h1>
           </a>
           <div className="nav-list">
